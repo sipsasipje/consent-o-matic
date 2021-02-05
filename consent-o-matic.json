@@ -7,6 +7,12 @@
             "selector": "#ccm_notification"
           },
           "type": "css"
+        },
+        "showingMatcher": {
+          "target": {
+            "selector": "#ccm_notification"
+          },
+          "type": "css"
         }
       }
     ],
@@ -14,11 +20,24 @@
       {
         "name": "OPEN_OPTIONS",
         "action": {
-          "type": "click",
-          "target": {
-            "selector": ".ccm_toggle_extended--open",
-            "textFilter": "meer uitleg"
-          }
+          "actions": [
+            {
+              "type": "waitcss",
+              "target": {
+                "selector": ".ccm_toggle_extended--open"
+              },
+              "retries": 10,
+              "waitTime": 200,
+              "negated": false
+            },
+            {
+              "target": {
+                "selector": ".ccm_toggle_extended--open"
+              },
+              "type": "click"
+            }
+          ],
+          "type": "list"
         }
       },
       {
