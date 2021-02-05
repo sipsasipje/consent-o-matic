@@ -19,28 +19,42 @@
     "methods": [
       {
         "action": {
-          "actions": [
-            {
-              "target": {
-                "selector": "#ccm_close"
-              },
-              "type": "click"
-            },
-            {
-              "type": "wait",
-              "waitTime": 250
-            },
-            {
-              "parent": {
-                "selector": ".click-away"
-              },
-              "target": {
-                "selector": ".close"
-              },
-              "type": "click"
-            }
-          ],
-          "type": "list"
+          "target": {
+            "selector": "#ccm_close"
+          },
+          "type": "click"
+        },
+        "name": "HIDE_CMP"
+      }
+    ]
+  },
+  "NPOBANNER": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "target": {
+            "selector": ".click-away"
+          },
+          "type": "css"
+        },
+        "showingMatcher": {
+          "target": {
+            "selector": ".click-away"
+          },
+          "type": "css"
+        }
+      }
+    ],
+    "methods": [
+      {
+        "action": {
+          "parent": {
+            "selector": ".click-away"
+          },
+          "target": {
+            "selector": ".close"
+          },
+          "type": "click"
         },
         "name": "HIDE_CMP"
       }
