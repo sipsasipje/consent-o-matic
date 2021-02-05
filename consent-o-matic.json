@@ -27,6 +27,10 @@
               "type": "click"
             },
             {
+              "type": "wait",
+              "waitTime": 250
+            },
+            {
               "target": {
                 "selector": "#_evidon_banner #_evidon-option-button"
               },
