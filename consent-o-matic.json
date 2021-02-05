@@ -1,0 +1,25 @@
+{
+  "NOS": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "type": "css",
+          "target": {
+            "selector": "#ccm_notification"
+          }
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": "#ccm_close"
+          }
+        }
+      }
+    ]
+  }
+}
