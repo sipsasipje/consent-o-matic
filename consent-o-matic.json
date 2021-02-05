@@ -3,10 +3,10 @@
     "detectors": [
       {
         "presentMatcher": {
-          "type": "css",
           "target": {
             "selector": "#ccm_notification"
-          }
+          },
+          "type": "css"
         }
       }
     ],
@@ -16,7 +16,7 @@
         "action": {
           "type": "click",
           "target": {
-            "selector": ".ccm_a ccm_toggle_extended--open",
+            "selector": ".ccm_toggle_extended--open",
             "textFilter": "meer uitleg"
           }
         }
