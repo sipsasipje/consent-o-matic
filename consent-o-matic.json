@@ -12,6 +12,16 @@
     ],
     "methods": [
       {
+        "name": "OPEN_OPTIONS",
+        "action": {
+          "type": "click",
+          "target": {
+            "selector": ".ccm_a ccm_toggle_extended--open",
+            "textFilter": "meer uitleg"
+          }
+        }
+      },
+      {
         "name": "HIDE_CMP",
         "action": {
           "type": "click",
