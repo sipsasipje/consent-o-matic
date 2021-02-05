@@ -36,7 +36,8 @@
               },
               "type": "click"
             }
-          ]
+          ],
+          "type": "list"
         }
       }
     ]
