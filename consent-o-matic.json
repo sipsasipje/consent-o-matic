@@ -1,5 +1,5 @@
 {
-  "NOS": {
+  "NPO": {
     "detectors": [
       {
         "presentMatcher": {
@@ -20,10 +20,23 @@
       {
         "name": "HIDE_CMP",
         "action": {
-          "target": {
-            "selector": "#ccm_close"
-          },
-          "type": "click"
+          "actions": [
+            {
+              "target": {
+                "selector": "#ccm_close"
+              },
+              "type": "click"
+            },
+            {
+              "parent": {
+                "selector": ".click-away"
+              },
+              "target": {
+                "selector": ".close"
+              },
+              "type": "click"
+            }
+          ]
         }
       }
     ]
