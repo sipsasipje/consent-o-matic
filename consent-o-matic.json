@@ -18,27 +18,24 @@
     ],
     "methods": [
       {
-        "name": "HIDE_CMP",
         "action": {
           "actions": [
             {
               "target": {
-                "selector": "#ccm_close"
+                "selector": "#ccm_close",
               },
               "type": "click"
             },
             {
-              "parent": {
-                "selector": ".click-away"
-              },
               "target": {
-                "selector": ".close"
+                "selector": "#_evidon_banner #_evidon-option-button"
               },
               "type": "click"
             }
           ],
           "type": "list"
-        }
+        },
+        "name": "HIDE_CMP",
       }
     ]
   },
