@@ -18,29 +18,6 @@
     ],
     "methods": [
       {
-        "name": "OPEN_OPTIONS",
-        "action": {
-          "actions": [
-            {
-              "type": "waitcss",
-              "target": {
-                "selector": ".ccm_toggle_extended--open"
-              },
-              "retries": 10,
-              "waitTime": 200,
-              "negated": false
-            },
-            {
-              "target": {
-                "selector": ".ccm_toggle_extended--open"
-              },
-              "type": "click"
-            }
-          ],
-          "type": "list"
-        }
-      },
-      {
         "name": "HIDE_CMP",
         "action": {
           "type": "click",
