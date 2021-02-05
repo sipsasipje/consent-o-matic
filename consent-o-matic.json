@@ -20,10 +20,43 @@
       {
         "name": "HIDE_CMP",
         "action": {
-          "type": "click",
           "target": {
             "selector": "#ccm_close"
-          }
+          },
+          "type": "click"
+        }
+      }
+    ]
+  },
+  "Reddit": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "target": {
+            "selector": "._3q-XSJ2vokDQrvdG6mR__k"
+          },
+          "type": "css"
+        },
+        "showingMatcher": {
+          "target": {
+            "selector": "._3q-XSJ2vokDQrvdG6mR__k"
+          },
+          "type": "css"
+        }
+      }
+    ],
+    "methods": [
+      {
+        "name": "HIDE_CMP",
+        "action": {
+          "parent": {
+            "selector": "._3q-XSJ2vokDQrvdG6mR__k"
+          },
+          "target": {
+            "selector": "button",
+            "textFilter": "I Agree"
+          },
+          "type": "click"
         }
       }
     ]
