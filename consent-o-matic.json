@@ -22,7 +22,7 @@
           "actions": [
             {
               "target": {
-                "selector": "#ccm_close",
+                "selector": "#ccm_close"
               },
               "type": "click"
             },
@@ -31,15 +31,18 @@
               "waitTime": 250
             },
             {
+              "parent": {
+                "selector": ".click-away"
+              },
               "target": {
-                "selector": "#_evidon_banner #_evidon-option-button"
+                "selector": ".close"
               },
               "type": "click"
             }
           ],
           "type": "list"
         },
-        "name": "HIDE_CMP",
+        "name": "HIDE_CMP"
       }
     ]
   },
