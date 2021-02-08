@@ -92,38 +92,5 @@
         }
       }
     ]
-  },
-  "DPG": {
-    "detectors": [
-      {
-        "presentMatcher": {
-          "target": {
-            "selector": "[id^=sp_message_iframe]"
-          },
-          "type": "css"
-        },
-        "showingMatcher": {
-          "target": {
-            "selector": "[id^=sp_message_iframe]"
-          },
-          "type": "css"
-        }
-      }
-    ],
-    "methods": [
-      {
-        "action": {
-          "parent": {
-            "selector": "[id^=sp_message_iframe]"
-          },
-          "target": {
-            "selector": "[class='message_component'] button",
-            "textFilter": ["Instellen"]
-          },
-          "type": "click"
-        },
-        "name": "OPEN_OPTIONS"
-      }
-    ]
   }
 }
