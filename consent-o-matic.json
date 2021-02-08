@@ -105,6 +105,7 @@
         },
         "showingMatcher": {
           "target": {
+            "iframeFilter": true,
             "selector": ".message-container"
           },
           "type": "css"
