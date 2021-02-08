@@ -98,13 +98,14 @@
       {
         "presentMatcher": {
           "target": {
-            "selector": "[id^='sp_message_iframe']"
+            "iframeFilter": true,
+            "selector": ".message-container"
           },
           "type": "css"
         },
         "showingMatcher": {
           "target": {
-            "selector": "[id^='sp_message_iframe']"
+            "selector": ".message-container"
           },
           "type": "css"
         }
@@ -114,11 +115,12 @@
       {
         "action": {
           "parent": {
-            "selector": "[id^='sp_message_iframe']"
+            "iframeFilter": true,
+            "selector": ".message-container"
           },
           "target": {
             "selector": "[class='message_component'] button",
-            "textFilter": ["Akkoord"]
+            "textFilter": ["Instellen", "Opties"]
           },
           "type": "click"
         },
