@@ -118,7 +118,7 @@
           },
           "target": {
             "selector": "[class='message_component'] button",
-            "textFilter": ["Instellen"]
+            "textFilter": ["Akkoord"]
           },
           "type": "click"
         },
