@@ -114,12 +114,11 @@
       {
         "action": {
           "parent": {
-            "iframeFilter": true,
-            "selector": ".message-container"
+            "selector": "[id^=sp_message_iframe]"
           },
           "target": {
             "selector": "[class='message_component'] button",
-            "textFilter": ["Instellen", "Opties"]
+            "textFilter": ["Instellen"]
           },
           "type": "click"
         },
