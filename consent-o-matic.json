@@ -98,14 +98,13 @@
       {
         "presentMatcher": {
           "target": {
-            "iframeFilter": true,
-            "selector": ".message-container"
+            "selector": "iframe[id^='sp_message_iframe']"
           },
           "type": "css"
         },
         "showingMatcher": {
           "target": {
-            "selector": ".message-container"
+            "selector": "iframe[id^='sp_message_iframe']"
           },
           "type": "css"
         }
@@ -115,8 +114,7 @@
       {
         "action": {
           "parent": {
-            "iframeFilter": true,
-            "selector": ".message-container"
+            "selector": "iframe[id^='sp_message_iframe']"
           },
           "target": {
             "selector": "[class='message_component'] button",
