@@ -92,5 +92,40 @@
         }
       }
     ]
+  },
+  "DPG": {
+    "detectors": [
+      {
+        "presentMatcher": {
+          "target": {
+            "iframeFilter": true,
+            "selector": ".message-container"
+          },
+          "type": "css"
+        },
+        "showingMatcher": {
+          "target": {
+            "selector": ".message-container"
+          },
+          "type": "css"
+        }
+      }
+    ],
+    "methods": [
+      {
+        "action": {
+          "parent": null,
+          "target": {
+            "selector": "[class='message_component'] button",
+            "textFilter": [
+              "Instellen",
+              "Opties"
+            ]
+          },
+          "type": "click"
+        },
+        "name": "OPEN_OPTIONS"
+      }
+    ]
   }
 }
